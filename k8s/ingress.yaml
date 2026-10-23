@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: shores-of-eberia-website-ingress
+  namespace: shores-of-eberia
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: shores-of-eberia.dev # replace with your real domain
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: shores-of-eberia-website
+                port:
+                  number: 80
