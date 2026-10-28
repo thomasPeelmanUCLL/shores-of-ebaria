@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: shores-of-eberia-website
+  name: shores-of-ebaria-website
   namespace: argocd
 spec:
   project: default
@@ -11,7 +11,7 @@ spec:
     path: k8s
   destination:
     server: https://kubernetes.default.svc
-    namespace: shores-of-eberia
+    namespace: shores-of-ebaria
   syncPolicy:
     automated:
       prune: true

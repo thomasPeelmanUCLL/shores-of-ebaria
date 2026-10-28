@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shores-of-eberia-website
-  namespace: shores-of-eberia
+  name: shores-of-ebaria-website
+  namespace: shores-of-ebaria
   labels:
-    app: shores-of-eberia-website
+    app: shores-of-ebaria-website
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: shores-of-eberia-website
+      app: shores-of-ebaria-website
   template:
     metadata:
       labels:
-        app: shores-of-eberia-website
+        app: shores-of-ebaria-website
     spec:
       containers:
         - name: website
