@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: website
-          image: ghcr.io/stray-gleb-tanakov/shores-of-ebaria:latest
+          image: ghcr.io/stray-gleb-tanakov/shores-of-ebaria:7a6ecc7939ea7a3839eb3486b4f8ad50a0d9e66e
           imagePullPolicy: Always
           ports:
             - containerPort: 80
